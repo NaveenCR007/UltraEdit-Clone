@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+header {
+    height: 5em;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 5em;
+}
+
+.left {
+    margin-top: 15px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+ul li:hover {
+    cursor: pointer;
+    color: gray;
+    transition: ease-in-out;
+    transition-duration: 350ms;
+}
+
+ul li:last-child {
+    cursor: pointer;
+    padding: 3px;
+}
+
+ul span {
+    margin-top: 30px;
+    margin-right: 28px;
+    margin-left: 7px;
+    padding: 2px;
+}
+
+
+.container {
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box1 {
+    margin-top: 110px;
+    margin: 40px;
+    width: 40vw;
+    height: 50%;
+    margin-right: 0px;
+}
+
+.box1 p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.box1 img {
+    margin-top: 70px;
+}
+
+.box1 a {
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.box1 a:hover {
+    cursor: pointer;
+}
+
+#btn1 {
+    height: 60px;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    width: auto;
+    border: none;
+    color: white;
+}
+
+#btn1:hover {
+    background-color: #04b8d49a;
+    transition: ease-in;
+    transition-duration: 350ms;
+}
+
+#link {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: start;
+    margin-top: 50px;
+}
+
+#btn2 {
+    /* height: 50px; */
+    background-color: #222;
+    border: 2px solid white;
+    font-size: large;
+    color: white;
+    width: auto;
+    margin-left: 26px;
+    border-radius: 5px;
+}
+
+#btn2:hover {
+    background-color: rgb(88, 87, 87);
+    transition: ease-in;
+    transition-duration: 350ms;
+}
+
+.box2 {
+    height: 50%;
+    width: 43vw;
+    margin-top: 40px;
+}
+
+.box2 video{
+    height: 320px;
+    width: 42vw;
+}
+
+.strip {
+    background-color: yellow;
+    text-align: center;
+    height: 8vh;
+    padding-top: 15px;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.last {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+
+.cards {
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: 30vw 30vw 25vw;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.card1 {
+    height: 40vh;
+}
+
+.card1 img {
+    width: 12vw;
+    margin-left: 27%;
+}
+
+.card1 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.card1 .para2 {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card2 {
+    height: 40vh;
+}
+
+.card2 img {
+    width: 6vw;
+    margin-left: 39%;
+}
+
+.card2 .para1 {
+    margin-top: 3.6%;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.card2 .para2 {
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card3 {
+    height: 40vh;
+}
+
+.card3 img {
+    width: 6vw;
+    margin-left: 39%;
+}
+
+.card3 .para1 {
+    margin-top: 3.6%;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.card3 .para2 {
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#p1 {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#p2 {
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 1.8em;
+}
+
+/* last grid */
+.last-container {
+    display: grid;
+    margin-top: 6%;
+    grid-template-columns: 26vw 26vw 26vw;
+    grid-template-rows: 48vh 48vh 48vh;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* 1 */
+.item1 img { 
+    width: 4em;
+    margin-left: 31%;
+}
+
+.item1 .para1 {
+    margin-top: 4.4%;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item1 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 2 */
+.item2 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item2 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item2 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 3 */
+.item3 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item3 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item3 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 4 */
+.item4 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item4 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item4 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 5 */
+.item5 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item5 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item5 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 6 */
+.item6 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item6 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item6 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 7 */
+.item7 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item7 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item7 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 8 */
+.item8 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item8 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item8 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+/* 9 */
+.item9 img { 
+    width: 5em;
+    margin-left: 31%;
+}
+
+.item9 .para1 {
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.item9 .para2 {
+    text-align: left;
+    margin-left: 3%;
+}
+
+.rating {
+    height: 67vh;
+    width: 100%;
+    background-color: #222;
+    color: white;
+}
+
+.rating .line0 {
+    text-align: center;
+    font-size: 27px;
+    padding-top: 35px;
+    padding-bottom: 12px;
+}
+
+.rating .line {
+    text-align: center;
+    font-size: 32px;
+}
+
+.rating img {
+    margin-top: 3%;
+    margin-left: 33%;
+    margin-bottom: 2%;
+    width: 35vw;
+}
+
+.rating .line2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.rating .line3 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.line3 a {
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+.line3 a:hover {
+    cursor: pointer;
+}
+
+div button {
+    margin-left: 30%;
+    margin-top: 8%;
+    padding: 12px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #00b6d1;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+
+div button:hover {
+    background-color: #289eb1;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.final {
+    margin-top: 9%;
+    display: flex;
+    height: 70vh;
+    gap: 3px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slides {
+    width: 30vw;
+    height: 70vh;
+}
+
+.slide1 {
+    width: 25vw;
+    background-color: white;
+    text-align: start;
+    margin-left: 6%;
+}
+
+.slide1 .head {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.slide1 .mains {
+    font-size: 14px;
+    padding: 2px;
+}
+
+.slide1 .mains:hover {
+    color: gray;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+
+.slide2 {
+    width: 30vw;
+    margin-left: 3%;
+    background-color: white;
+    text-align: start;
+}
+
+.slide2 .head {
+    font-size: 0.99em;
+    margin-top: 3px;
+    text-align: start;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.slide2 .mains {
+    font-size: 14px;
+    padding: 5px;
+    text-align: start;
+}
+
+.slide2 .mains:hover {
+    color: gray;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+
+
+.slide3 {
+    width: 30vw;
+    margin-left: 3%;
+    background-color: white;
+    text-align: start;
+}
+
+.slide3 .head {
+    font-size: 0.99em;
+    margin-top: 3px;
+    text-align: start;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.slide3 .mains {
+    font-size: 14px;
+    padding: 5px;
+    text-align: start;
+}
+
+.slide3 .mains:hover {
+    color: gray;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+
+.slide4 {
+    width: 30vw;
+    margin-left: 3%;
+    background-color: white;
+    text-align: start;
+}
+
+.slide4 .head {
+    font-size: 0.99em;
+    margin-top: 3px;
+    text-align: start;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.slide4 .mains {
+    font-size: 14px;
+    padding: 5px;
+    text-align: start;
+}
+
+.slide4 .mains:hover {
+    color: gray;
+    transition: 300ms ease-in;
+    cursor: pointer;
+}
+
+.slide5 .head {
+    font-size: 0.99em;
+    margin-top: 3px;
+    text-align: start;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 1.5em;
+}
+
+.slide5 .mains {
+    font-size: 14px;
+    padding: 5px;
+    text-align: start;
+}
